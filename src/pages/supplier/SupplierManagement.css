@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.supplier-management {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Table Styles */
+.supplier-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.supplier-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.supplier-table th, 
+.supplier-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.supplier-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  color: #444;
+}
+
+.supplier-table td {
+  background-color: #ffffff;
+}
+
+.supplier-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Action Buttons Container */
+.action-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+/* Base button styles */
+.btn-action {
+  padding: 3px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: white;
+  min-width: fit-content;
+  line-height: 1.2;
+  transition: all 0.2s ease;
+}
+
+/* Edit button - Blue */
+.btn-edit {
+  background-color: #2196F3;
+}
+.btn-edit:hover {
+  background-color: #1976D2;
+}
+
+/* Delete button - Red */
+.btn-delete {
+  background-color: #f44336;
+}
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+/* Send/SMS button - Green */
+.btn-sms {
+  background-color: #4CAF50;
+}
+.btn-sms:hover {
+  background-color: #388E3C;
+}
+
+/* Disabled state */
+.btn-action:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Primary buttons (Add Supplier, etc) */
+.btn-primary {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+/* Status styles */
+.status-pending {
+  color: #f57c00;
+  background: #fff3e0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.status-sent {
+  color: #388e3c;
+  background: #e8f5e9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* Make table cells with actions have proper width */
+td.actions-cell {
+  min-width: 160px;
+  padding: 4px 8px;
+}
+
+/* Same structure as MediatorManagement.css but replace 'mediator' with 'supplier' in class names */ 

@@ -1,0 +1,313 @@
+/* Full Page Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Adjust font family as per your design */
+}
+
+/* Table Styles */
+table {
+  background-color: white;
+  border-collapse: collapse; /* Optional: Ensures the borders don't double up */
+  width: 100%; /* Optional: Adjust as per your requirements */
+}
+
+th, td {
+  padding: 10px; /* Adjust padding for better readability */
+  border: 1px solid #ddd; /* Optional: Add border for clarity */
+}
+
+th {
+  background-color: #f4f4f4; /* Optional: Light background for table headers */
+  text-align: left; /* Adjust text alignment */
+}
+
+/* Account Management Section */
+.Account-Management {
+ 
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't affect layout */
+}
+
+/* Table Wrapper with Scroll */
+.entries-table-wrapper {
+  overflow-x: auto; /* Enables horizontal scroll if content overflows */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+/* Optional: Adjust padding around the table wrapper */
+}
+
+.account-table td {
+  background-color: #ffffff;
+}
+
+
+
+.status-sent {
+  color: green;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Disabled Button */
+.btn-disabled {
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Button Styles */
+.btn-send, .btn-edit, .btn-delete {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+.btn-add:hover { color: #ffffff; }
+.btn-export:hover {  color: #ffffff; }
+.btn-edit:hover {  color: #ffffff; }
+.btn-delete:hover { color: #ffffff; }
+.btn-sms:hover { color: #ffffff; } 
+
+.btn-send:hover, .btn-edit:hover, .btn-delete:hover {
+  color: #ffffff;
+}
+
+.btn-send:disabled, .btn-send[disabled] {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.calendar-container,
+.search-container {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 8px;
+  margin-left: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="date"] {
+  width: 150px;
+}
+
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.account-management {
+  padding: 20px;
+}
+
+.controls-section {
+  display: flex;
+  gap: 15px;
+  align-items: right;
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  min-width: 150px;
+}
+
+.date-section {
+  display: flex;
+  align-items: right;
+  gap: 15px;
+}
+
+.date-section input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+.btn-add, .btn-export, .btn-edit, .btn-delete, .btn-sms {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-add {
+  background-color: #4CAF50;
+}
+
+.btn-export {
+  background-color: #FF9800;
+}
+
+.btn-edit {
+  background-color: #2196F3;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+.btn-sms {
+  background-color: #9C27B0;
+}
+
+.btn-add:hover { background-color: #45a049; }
+.btn-export:hover { background-color: #F57C00; }
+.btn-edit:hover { background-color: #1976D2; }
+.btn-delete:hover { background-color: #d32f2f; }
+.btn-sms:hover { background-color: #7B1FA2; }
+
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.entries-table-wrapper {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.entries-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.entries-table th {
+  background-color: #f5f5f5;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.entries-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+/* Base button styles */
+.btn-action {
+  padding: 3px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: white;
+  min-width: fit-content;
+  line-height: 1.2;
+  transition: all 0.2s ease;
+}
+
+/* Edit button - Blue */
+.btn-edit {
+  background-color: #2196F3;
+}
+.btn-edit:hover {
+  background-color: #1976D2;
+}
+
+/* Delete button - Red */
+.btn-delete {
+  background-color: #f44336;
+}
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+/* Send/SMS button - Green */
+.btn-sms {
+  background-color: #4CAF50;
+}
+.btn-sms:hover {
+  background-color: #388E3C;
+}
+
+/* Make table cells with actions have proper width */
+td.actions-cell {
+  min-width: 160px;
+  padding: 4px 8px;
+}
+
+/* Top control buttons */
+.controls-section button {
+  padding: 3px 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  background-color: #4CAF50;
+}
+
+/* Status styles */
+.status-pending {
+  color: #f57c00;
+  background: #fff3e0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.status-sent {
+  color: #388e3c;
+  background: #e8f5e9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}

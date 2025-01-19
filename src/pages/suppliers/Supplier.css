@@ -1,0 +1,4 @@
+.supplier-table-wrapper {
+    overflow-x: auto; /* Enables horizontal scroll if content overflows */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+  }

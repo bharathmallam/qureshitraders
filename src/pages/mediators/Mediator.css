@@ -1,0 +1,203 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+.mediator-management {
+    max-width: 12000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Button Styles */
+.btn-add, .btn-save, .btn-cancel {
+    background-color: #007bff; /* Changed to blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add {
+    margin-bottom: 20px;
+}
+
+.btn-add:hover, .btn-save:hover, .btn-cancel:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-cancel {
+    background-color: #dc3545; /* Updated Cancel button to red */
+}
+
+.btn-cancel:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Table Styles */
+.mediator-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.mediator-table th, .mediator-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.mediator-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #444;
+}
+
+.mediator-table td {
+    background-color: #ffffff;
+}
+
+.mediator-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.status-sent {
+    color: green; /* Retained green color for "Sent" status */
+    font-weight: bold;
+}
+
+.status-pending {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #444;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.modal-content input:focus {
+    border-color: #007bff; /* Changed to blue */
+}
+
+.error {
+    color: #f44336;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mediator-management {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .mediator-table th, .mediator-table td {
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mediator-table th, .mediator-table td {
+        padding: 8px;
+    }
+
+    .modal-content h2 {
+        font-size: 18px;
+    }
+
+    .btn-add {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-save, .btn-cancel {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+.mediator-table-wrapper {
+    overflow-x: auto; /* Enables horizontal scroll if content overflows */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+  }
+  
+
+  .search-bar {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .search-bar:focus {
+    outline: none;
+    border-color: #66afe9;
+  }
+  

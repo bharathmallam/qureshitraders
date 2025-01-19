@@ -1,0 +1,81 @@
+/* Action cell styles */
+td.actions-cell {
+  padding: 0 !important;
+  width: 90px !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  font-size: 0 !important;
+}
+
+/* Action buttons container */
+.action-buttons {
+  display: inline-flex !important;
+  gap: 1px !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: fit-content !important;
+  height: 16px !important;
+  font-size: 0 !important;
+}
+
+/* Base action button style */
+.btn-action, 
+.btn-send, 
+.btn-edit, 
+.btn-delete {
+  width: 28px !important;
+  height: 16px !important;
+  padding: 0 !important;
+  font-size: 9px !important;
+  border: none !important;
+  border-radius: 1px !important;
+  cursor: pointer !important;
+  color: white !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  font-weight: normal !important;
+  line-height: 1 !important;
+  background: none !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  flex: 0 0 auto !important;
+  letter-spacing: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* Button variants with more specific selectors */
+.btn-edit, .btn-action.btn-edit, button.btn-edit {
+  background-color: #2196F3 !important;
+}
+
+.btn-delete, .btn-action.btn-delete, button.btn-delete {
+  background-color: #f44336 !important;
+}
+
+.btn-sms, .btn-send, .btn-action.btn-sms, button.btn-sms, button.btn-send {
+  background-color: #4CAF50 !important;
+}
+
+/* Hover states */
+.btn-edit:hover { background-color: #1976D2 !important; }
+.btn-delete:hover { background-color: #d32f2f !important; }
+.btn-sms:hover, .btn-send:hover { background-color: #388E3C !important; }
+
+/* Disabled state */
+.btn-action:disabled,
+.btn-send:disabled {
+  background-color: #ccc !important;
+  cursor: not-allowed !important;
+  opacity: 0.7 !important;
+}
+
+/* Table cell padding override */
+.mediator-table td, 
+.supplier-table td,
+.renewals-table td,
+.accounts-table td {
+  padding: 2px !important;
+} 

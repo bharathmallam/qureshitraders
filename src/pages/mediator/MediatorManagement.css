@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.mediator-management {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Controls Section */
+.controls-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Table Styles */
+.mediator-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mediator-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.mediator-table th, 
+.mediator-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.mediator-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  color: #444;
+}
+
+.mediator-table td {
+  background-color: #ffffff;
+}
+
+.mediator-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Reset button styles */
+.mediator-table button {
+  width: auto !important;
+  background: none !important;
+  padding: 0 !important;
+  font-weight: normal !important;
+  transition: none !important;
+  border-radius: 0 !important;
+}
+
+/* Action cell styles */
+.mediator-table td.actions-cell {
+  width: auto !important;
+  padding: 8px !important;
+  white-space: nowrap !important;
+}
+
+/* Action buttons container */
+.mediator-table .action-buttons {
+  display: flex !important;
+  gap: 8px !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: fit-content !important;
+}
+
+/* Individual action buttons */
+.mediator-table .btn-action {
+  background: none !important;
+  border: none !important;
+  padding: 4px 8px !important;
+  font-size: 12px !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: fit-content !important;
+  height: auto !important;
+  margin: 0 !important;
+  border-radius: 3px !important;
+}
+
+/* Button colors */
+.mediator-table .btn-edit {
+  color: #2196F3 !important;
+}
+
+.mediator-table .btn-delete {
+  color: #f44336 !important;
+}
+
+.mediator-table .btn-sms {
+  color: #4CAF50 !important;
+}
+
+/* Hover effects */
+.mediator-table .btn-action:hover {
+  opacity: 0.8;
+}
+
+/* Disabled state */
+.mediator-table .btn-action:disabled {
+  color: #ccc !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+}
+
+/* Primary buttons (Add Mediator, etc) */
+.btn-primary {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+/* Status Styles */
+.status-pending {
+  color: #f57c00;
+  background: #fff3e0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.status-sent {
+  color: #388e3c;
+  background: #e8f5e9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+} 

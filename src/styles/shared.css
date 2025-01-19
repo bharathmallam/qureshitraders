@@ -1,0 +1,51 @@
+.action-buttons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: flex-start;
+  padding: 4px;
+}
+
+.btn-action {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  min-width: fit-content;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #2196F3;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+.btn-sms {
+  background-color: #4CAF50;
+}
+
+.btn-view {
+  background-color: #FF9800;
+}
+
+.btn-edit:hover { background-color: #1976D2; }
+.btn-delete:hover { background-color: #d32f2f; }
+.btn-sms:hover { background-color: #388E3C; }
+.btn-view:hover { background-color: #F57C00; }
+
+.btn-action:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Make table cells with actions have proper width */
+td.actions-cell {
+  min-width: 180px; /* Adjust based on number of buttons */
+  white-space: nowrap;
+} 

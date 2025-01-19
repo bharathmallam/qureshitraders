@@ -1,0 +1,247 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fb;
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Button Styles */
+.btn-add, .btn-save, .btn-close, .btn-edit, .btn-delete {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add {
+  margin-bottom: 20px;
+}
+
+.btn-add:hover, .btn-save:hover, .btn-close:hover, .btn-edit:hover, .btn-delete:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-close {
+  background-color: #dc3545; /* Red background for Close button */
+}
+
+.btn-close:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.btn-edit, .btn-delete {
+  background: none;
+  color: #007bff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+  color: #0056b3;
+}
+
+/* Table Styles */
+/* Table Styles */
+.employee-table-container {
+  max-height: 400px; /* Adjust the max height as per your design */
+  overflow-y: auto; /* Adds vertical scroll */
+  margin-bottom: 20px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0; /* No extra margin */
+}
+
+.employee-table th, .employee-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.employee-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  color: #444;
+}
+
+.employee-table td {
+  background-color: #ffffff;
+}
+
+.employee-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position:relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-close,
+.btn-save {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-close {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-save {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.main-content {
+  padding-top: 10px; /* This matches the height of the navbar */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .employee-table {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+  .modal-content {
+    width: 95%; /* Ensure modals don't overflow */
+  }
+  
+  .btn-add, .btn-save, .btn-close, .btn-edit, .btn-delete {
+    font-size: 14px; /* Make buttons smaller on mobile */
+  }
+}
+
+.import-section {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.btn-import {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-import:hover {
+  background-color: #45a049;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+/* Base button styles */
+.btn-action {
+  padding: 3px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: white;
+  min-width: fit-content;
+  line-height: 1.2;
+  transition: all 0.2s ease;
+}
+
+/* Edit button - Blue */
+.btn-edit {
+  background-color: #2196F3;
+}
+.btn-edit:hover {
+  background-color: #1976D2;
+}
+
+/* Delete button - Red */
+.btn-delete {
+  background-color: #f44336;
+}
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+/* Send/SMS button - Green */
+.btn-sms {
+  background-color: #4CAF50;
+}
+.btn-sms:hover {
+  background-color: #388E3C;
+}
+
+/* Make table cells with actions have proper width */
+td.actions-cell {
+  min-width: 160px;
+  padding: 4px 8px;
+}
